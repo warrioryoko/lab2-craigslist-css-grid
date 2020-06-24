@@ -1,0 +1,103 @@
+
+body {
+    /* https://coolors.co/generate and click export -> scss to get the colors to copy and paste below*/
+    
+    font-family: 'Titillium Web', sans-serif;
+    background-color: var(--color2);
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    height: 100%;
+    width: 980px;
+    display: grid;
+    grid-template-columns: 1fr 4fr .5fr;
+}
+
+.info-sidebar {
+    border: solid black;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 3fr 5fr 4fr;
+}
+
+.content-container {
+    border: solid black;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr 14fr;
+
+}
+
+.locations-container {
+    border: solid black;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 12fr 1fr;
+}
+
+.categories-container {
+    border: solid black;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr .5fr;
+    grid-template-areas:
+        "community housing jobs"
+        "community housing jobs"
+        "services housing jobs"
+        "services sale jobs"
+        "services sale jobs"
+        "discuss sale jobs"
+        "discuss sale jobs"
+        "discuss sale gigs"
+        "discuss sale resumes"
+
+}
+
+.footer {
+    border: solid black;
+    width: 100%;
+}
+
+.community {
+    grid-area: community;
+}
+
+.housing {
+    grid-area: housing;
+}
+
+.sale {
+    grid-area: sale;
+}
+
+.jobs {
+    grid-area: jobs;
+}
+
+.services {
+    grid-area: services;
+}
+
+.gigs {
+    grid-area: gigs;
+}
+
+.resumes {
+    grid-area: resumes;
+}
+
+.discuss {
+    grid-area: discuss;
+}
+
+.box {
+    border: solid black;
+}
